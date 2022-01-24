@@ -10,3 +10,28 @@ body {
 .toast-div {
   display: none !important;
 }
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.col-lg-3.col-md-6.col-sm-12 ul li i {
+  background: hsla(229, 46%, 30%, 0.521);
+  padding: 0.2rem;
+  border-radius: 50%;
+}
+.col-lg-3.col-md-6.col-sm-12.active {
+  transform: scale(1, 1.2);
+  background: cornflowerblue;
+  border-radius: 0.4rem;
+  color: white;
+}
+.col-lg-3.col-md-6.col-sm-12.active::after {
+  content: "Hot";
+  position: absolute;
+  background: #ff000c;
+  top: -15px;
+  right: 22px;
+  border-radius: 32%;
+  padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+}
